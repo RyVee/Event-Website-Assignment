@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Lato", "sans-serif";
+}
+
+body {
+    background-color: darkgray;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background-color: ivory;
+}
+
+.logo {
+    padding: 30px;
+    margin: 40px;
+}
+
+.nav-link {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+    font-size: 2rem;
+}
+
+.nav-link a:link {
+    text-decoration: none;
+    color: black;
+}
+
+.nav-link a:visited {
+    color: black;
+}
+
+.intro h2 {
+    display: flex;
+    justify-content: center;
+    margin: 40px;
+    padding: 20px;
+    font-size: 2.1rem;
+}
+
+.intro-text {
+    display: flex;
+}
+
+.intro-text img {
+    max-width: 30%;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    margin: 40px;
+    padding: 20px;
+}
+
+.intro-text p {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.home-summary {
+    display: flex;
+    justify-content: center;
+    font-size: 1.5rem;
+
+}
+
+.call-to-action {
+    display: flex;
+    justify-content: center;
+    margin: 70px;
+    font-size: 2rem;
+}
+
+.social-media-links {
+    display: flex;
+    color: black;
+
+}
+
+footer a {
+    list-style: none;
+    text-decoration: none;
+    color: black;
+}
