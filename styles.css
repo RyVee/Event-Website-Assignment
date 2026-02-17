@@ -67,7 +67,6 @@ body {
     display: flex;
     justify-content: center;
     font-size: 1.5rem;
-
 }
 
 .call-to-action {
@@ -154,4 +153,22 @@ a:hover {
 
 .event-table td {
     padding: 20px;
+}
+
+/* Contact page */
+.main-contact {
+    display: flex;
+    justify-content: flex-start;
+    font-size: 1.5rem;
+    margin: 0px 400px;
+    
+}
+
+.main-contact li {
+    text-decoration: none;
+    list-style: none;
+}
+
+.main-contact li span {
+    font-weight: bold;
 }
