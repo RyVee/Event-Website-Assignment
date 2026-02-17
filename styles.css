@@ -110,3 +110,48 @@ a:hover {
     text-decoration: underline;
 }
 
+/* About Us page */
+.about-us-main {
+    margin: 20px 200px;
+    padding: 40px;
+    background-color: aliceblue;
+    border-radius: 20px;
+    box-shadow: 5px 5px #d1cdcd88;
+}
+
+.about-us-main div {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.about-us-main h3 {
+    display: flex;
+    margin: 20px 50px;
+    font-size: 2rem;
+}
+
+.about-us-main p {
+    display: flex;
+    font-size: 1.25rem;
+}
+/* Events page */
+.events-main {
+    display: flex;
+    justify-content: center;
+}
+
+.event-table {
+    margin-top: 20px;
+    background-color:aliceblue;
+    border-radius: 20px;
+    box-shadow: 5px 5px #d1cdcd88;
+}
+.event-table tr{
+    width: 70%;
+    height: 150px;
+    font-size: 1.5rem;
+    
+}
+
+.event-table td {
+    padding: 20px;
+}
