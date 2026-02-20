@@ -47,7 +47,7 @@ body {
 }
 
 .intro-text img {
-    max-width: 30%;
+    width: 600px;
     display: flex;
     justify-content: right;
     align-items: center;
@@ -79,11 +79,11 @@ body {
 footer {
     display: flex;
     justify-content: space-between;
-    position: fixed;
     bottom: 0;
     left: 0;
     width: 100%;
     z-index: 1000;
+    margin-top: 40px;
 }
 footer a {
     color: black;
@@ -116,6 +116,7 @@ a:hover {
     background-color: aliceblue;
     border-radius: 20px;
     box-shadow: 5px 5px #d1cdcd88;
+    height: 700px;
 }
 
 .about-us-main div {
@@ -129,9 +130,24 @@ a:hover {
 }
 
 .about-us-main p {
-    display: flex;
     font-size: 1.25rem;
 }
+
+.personalized img {
+    width: 250px;
+    float: right;
+}
+
+.partnership-photos {
+    display: flex;
+    justify-content: space-around;
+}
+.partnership-photos img{
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+
 /* Events page */
 .events-main {
     display: flex;
@@ -196,4 +212,30 @@ a:hover {
 
 .main-contact li span {
     font-weight: bold;
+}
+
+/* Mobile screen */
+@media screen and (max-width: 480px) {
+    body {
+        ul {
+            font-size: 1rem;
+            display: flex;
+            list-style: none;
+        }
+        .intro-text {
+            width: 500px;
+        }
+
+        .intro-text img{
+            padding: 0;
+            margin-right: 0;
+            width: 800px;
+        }
+        }
+    }
+}
+
+/* Tablet screen */
+@media screen and (max-width: 600px) {
+
 }
