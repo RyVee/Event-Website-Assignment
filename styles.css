@@ -217,23 +217,47 @@ a:hover {
 /* Mobile screen */
 @media screen and (max-width: 480px) {
     body {
+
+        .menu-toggle {
+            font-size: 25px;
+            cursor: pointer;
+        }
+
+        .nav-link {
+            display: none;
+        }
+        
+        .navbar {
+            padding: 10px;
+            justify-content: left;
+        }
+        .logo {
+            display: flex;
+            text-align: right;
+        }
+        
         ul {
             font-size: 1rem;
             display: flex;
             list-style: none;
         }
+
+        .intro h2 {
+            font-size: 1.5rem;
+        }
         .intro-text {
             width: 500px;
+            flex-wrap: wrap;
+            font-size: 0.75rem;
         }
 
         .intro-text img{
             padding: 0;
             margin-right: 0;
-            width: 800px;
+            width: 300px;
         }
         }
     }
-}
 
 /* Tablet screen */
 @media screen and (max-width: 600px) {

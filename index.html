@@ -4,11 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" 
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" 
+        crossorigin="anonymous" 
+        referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    
+    <!-- Navigation Bar -->
     <nav class="navbar">
+        <i class="fas fa-bars menu-toggle" onclick="toggleMenu()"></i>
+
         <h1 class="logo">Ryan's Reservations</h1>
+
         <ul class="nav-link">
             <li><a href="index.html">Home</a></li>
             <li><a href="about.html">About Us</a></li>
@@ -17,6 +26,7 @@
         </ul>
     </nav>
 
+    <!-- Main section -->
     <section class="part-1">
         <div class="intro">
             <h2>Welcome to the Ryan's Reservations Event Center</h2>
@@ -39,6 +49,8 @@
     <section class="call-to-action">
         <h3>Contact us for a quote today ! </h3>
     </section>
+
+    <!-- Footer -->
     <footer>
         <ul class="policy-links">
             <li><a href="#">Privacy Policy</a></li>
