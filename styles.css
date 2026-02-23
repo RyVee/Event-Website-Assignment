@@ -9,6 +9,12 @@
 body {
     background-color: darkgray;
 }
+
+/* Hides hamburger menu */
+.menu-toggle {
+    display: none;
+}
+
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -216,48 +222,77 @@ a:hover {
 
 /* Mobile screen */
 @media screen and (max-width: 480px) {
-    body {
-
-        .menu-toggle {
-            font-size: 25px;
-            cursor: pointer;
-        }
-
-        .nav-link {
-            display: none;
-        }
-        
-        .navbar {
-            padding: 10px;
-            justify-content: left;
-        }
-        .logo {
-            display: flex;
-            text-align: right;
-        }
-        
-        ul {
-            font-size: 1rem;
-            display: flex;
-            list-style: none;
-        }
-
-        .intro h2 {
-            font-size: 1.5rem;
-        }
-        .intro-text {
-            width: 500px;
-            flex-wrap: wrap;
-            font-size: 0.75rem;
-        }
-
-        .intro-text img{
-            padding: 0;
-            margin-right: 0;
-            width: 300px;
-        }
-        }
+    .menu-toggle {
+        font-size: 25px;
+        cursor: pointer;
+        display: block;
     }
+ /* Show the menu when class active is there */
+    .nav-link.active {
+        display: flex;
+    }
+
+    .nav-link {
+        display: none;
+    }
+        
+    .navbar {
+        padding: 10px;
+        justify-content: left;
+    }
+    .logo {
+        padding-left: 20px;
+    }
+        
+    ul {
+        font-size: 1rem;
+        display: flex;
+        list-style: none;
+    }
+
+    .intro h2 {
+        font-size: 1.5rem;
+    }
+
+    .intro-text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 0;
+        padding: 0;
+        gap: 20px;
+    }
+
+    .intro-text img{
+        padding: 0;
+        margin: 0;
+        width: 300px;
+    }
+    
+    .home-summary ul {
+        padding: 0;
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        gap: 20px;
+    }
+
+    .call-to-action {
+        justify-content: center;
+        text-align: center;
+        margin: 20px 20px 20px 20px;
+    }
+
+    footer {
+        margin: 0;
+    }
+
+    .social-media-links {
+        display: none;
+    }
+        }
 
 /* Tablet screen */
 @media screen and (max-width: 600px) {

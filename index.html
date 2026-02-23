@@ -11,19 +11,26 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    
+
     <!-- Navigation Bar -->
     <nav class="navbar">
         <i class="fas fa-bars menu-toggle" onclick="toggleMenu()"></i>
 
         <h1 class="logo">Ryan's Reservations</h1>
 
-        <ul class="nav-link">
+        <ul id="nav-link.active" class="nav-link">
             <li><a href="index.html">Home</a></li>
             <li><a href="about.html">About Us</a></li>
             <li><a href="events.html">Events</a></li>
             <li><a href="contact.html">Contact Us</a></li>
         </ul>
+
+        <script>
+            function toggleMenu() {
+                const  menu= documents.getElementsById("nav-link");
+                menu.classList.toggle("active");
+            }
+        </script>
     </nav>
 
     <!-- Main section -->
