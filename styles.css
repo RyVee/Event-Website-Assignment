@@ -235,7 +235,10 @@ a:hover {
     display: flex;
     justify-content: flex-start;
     font-size: 1.25rem;
-    margin: 0px 400px;
+    margin: 0;
+    padding: 10px 400px 10px 400px;
+    background-color: rgb(110, 57, 66);
+    color: rgb(202, 200, 200);
 }
 
 .main-contact li {
@@ -312,6 +315,10 @@ a:hover {
         width: 300px;
     }
     
+    .home-summary {
+        margin: 10px 0 10px 0;
+    }
+
     .home-summary ul {
         padding: 0;
         display: flex;
@@ -374,6 +381,44 @@ a:hover {
         }
 
 /* Tablet screen */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 900px) {
+    
+    .navbar {
+        padding: 10px 5px 10px 5px;
+    }
 
+    .nav-link {
+        font-size: 20px;
+    }
+
+    .intro h2 {
+        font-size: 30px;
+    }
+    .intro-text img {
+        width: 450px;
+    }
+
+    .contact-form {
+        margin-top: 0;
+    }
+    .fas {
+        display: none;
+    }
+    
+    .main-contact {
+        justify-content: center;
+        margin: 0;
+        padding: 10px 200px 10px 200px;
+    }
+
+    footer {
+        margin: 0;
+        position: absolute;
+        bottom: 0;
+    }
+
+/* About Us page tablet screen */
+    .about-us-main {
+       margin: 0; 
+    }
 }
