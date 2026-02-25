@@ -11,15 +11,26 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <!-- Navigation Bar -->
     <nav class="navbar">
-        <h1 class="logo">Ryan's Reservations</h1>
-        <ul class="nav-link">
+        <i class="fas fa-bars menu-toggle" onclick="toggleMenu()"></i>
+        <h1 class="logo"><a href="index.html">Ryan's Reservations</a></h1>
+        <ul id="nav-link.active" class="nav-link">
             <li><a href="index.html">Home</a></li>
             <li><a href="about.html">About Us</a></li>
             <li><a href="events.html">Events</a></li>
             <li><a href="contact.html">Contact Us</a></li>
         </ul>
+
+        <script>
+            function toggleMenu() {
+                const  menu= documents.getElementsById("nav-link");
+                menu.classList.toggle("active");
+            }
+        </script>
     </nav>
+
+    <!-- Main section -->
     <section>
         <div class="intro">
             <h2>Receive a quote within 24 hours !</h2>
@@ -53,6 +64,8 @@
 
         </form>
     </main>
+
+    <!-- Contact form -->
     <section class="main-contact">
         <ul>
             <li><span>Number:</span>  984-999-9999</li>
@@ -62,6 +75,7 @@
             <li><span>Opening Hours:</span> Monday - Friday 8:00 am - 6:00 pm <br> Weekends 10:00 am - 3:00 pm</li>
         </ul>
     </section>
+    <!-- Footer -->
     <footer>
         <ul class="policy-links">
             <li><a href="#">Privacy Policy</a></li>
