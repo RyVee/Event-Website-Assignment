@@ -455,10 +455,6 @@ a:hover {
 
     .personalized-container img {
         margin: 20px;
-    }
-    footer {
-        position: absolute;
-    }
 }
 
 @media screen and (min-width: 1921px) and (max-width: 2560px) {
